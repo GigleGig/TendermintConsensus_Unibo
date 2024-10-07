@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+E:/CMAKE/share/cmake-3.30/Modules/CMakeDependentOption.cmake
+E:/CMAKE/share/cmake-3.30/Modules/GNUInstallDirs.cmake
+F:/Visual Studio/CppCode/BlockChain/build/_deps/googletest-src/CMakeLists.txt

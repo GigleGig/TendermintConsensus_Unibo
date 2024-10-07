@@ -1,0 +1,10 @@
+^F:\VISUAL STUDIO\CPPCODE\BLOCKCHAIN\BUILD\CMAKEFILES\383459AA671E3A4A46E43C424F5A1BE8\GENERATE.STAMP.RULE
+setlocal
+E:\CMAKE\bin\cmake.exe "-SF:/Visual Studio/CppCode/BlockChain" "-BF:/Visual Studio/CppCode/BlockChain/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "F:/Visual Studio/CppCode/BlockChain/build/TendermintConsensus.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

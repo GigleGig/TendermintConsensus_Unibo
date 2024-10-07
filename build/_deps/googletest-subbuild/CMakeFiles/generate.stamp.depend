@@ -1,0 +1,22 @@
+# CMake generation dependency list for this directory.
+E:/CMAKE/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake
+E:/CMAKE/share/cmake-3.30/Modules/CMakeGenericSystem.cmake
+E:/CMAKE/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake
+E:/CMAKE/share/cmake-3.30/Modules/CMakeSystem.cmake.in
+E:/CMAKE/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake
+E:/CMAKE/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake
+E:/CMAKE/share/cmake-3.30/Modules/ExternalProject.cmake
+E:/CMAKE/share/cmake-3.30/Modules/ExternalProject/PatchInfo.txt.in
+E:/CMAKE/share/cmake-3.30/Modules/ExternalProject/RepositoryInfo.txt.in
+E:/CMAKE/share/cmake-3.30/Modules/ExternalProject/UpdateInfo.txt.in
+E:/CMAKE/share/cmake-3.30/Modules/ExternalProject/cfgcmd.txt.in
+E:/CMAKE/share/cmake-3.30/Modules/ExternalProject/download.cmake.in
+E:/CMAKE/share/cmake-3.30/Modules/ExternalProject/extractfile.cmake.in
+E:/CMAKE/share/cmake-3.30/Modules/ExternalProject/mkdirs.cmake.in
+E:/CMAKE/share/cmake-3.30/Modules/ExternalProject/shared_internal_commands.cmake
+E:/CMAKE/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake
+E:/CMAKE/share/cmake-3.30/Modules/Platform/Windows.cmake
+E:/CMAKE/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake
+F:/Visual Studio/CppCode/BlockChain/build/_deps/googletest-subbuild/CMakeFiles/3.30.0/CMakeSystem.cmake
+F:/Visual Studio/CppCode/BlockChain/build/_deps/googletest-subbuild/CMakeLists.txt
+F:/Visual Studio/CppCode/BlockChain/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-mkdirs.cmake

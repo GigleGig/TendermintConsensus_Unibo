@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="F:\Visual Studio\CppCode\BlockChain\build\CMakeFiles\383459aa671e3a4a46e43c424f5a1be8\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2569881D-762F-33BC-BF9A-0B25CB4F5393}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

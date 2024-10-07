@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+E:/CMAKE/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake
+E:/CMAKE/share/cmake-3.30/Modules/CheckIncludeFile.cmake
+E:/CMAKE/share/cmake-3.30/Modules/CheckLibraryExists.cmake
+E:/CMAKE/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake
+E:/CMAKE/share/cmake-3.30/Modules/FindPackageMessage.cmake
+E:/CMAKE/share/cmake-3.30/Modules/FindThreads.cmake
+F:/Visual Studio/CppCode/BlockChain/build/_deps/googletest-src/googlemock/CMakeLists.txt
+F:/Visual Studio/CppCode/BlockChain/build/_deps/googletest-src/googlemock/cmake/gmock.pc.in
+F:/Visual Studio/CppCode/BlockChain/build/_deps/googletest-src/googlemock/cmake/gmock_main.pc.in
