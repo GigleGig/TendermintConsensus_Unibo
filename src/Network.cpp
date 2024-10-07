@@ -10,7 +10,7 @@ void Network::registerNode(Node* node) {
 
 
 size_t Network::getTotalNodes() const {
-    return nodes.size();  // 使用 size_t 作为返回类型
+    return nodes.size();
 }
 
 
