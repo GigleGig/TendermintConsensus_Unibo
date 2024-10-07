@@ -11,7 +11,7 @@ public:
     std::string getHash() const;
     int getIndex() const;
     std::string getPreviousHash() const;
-    std::vector<std::string> getTransactions() const; // 添加 getTransactions() 方法
+    std::vector<std::string> getTransactions() const;
 
 private:
     int index;
