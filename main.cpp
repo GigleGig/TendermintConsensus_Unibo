@@ -9,29 +9,29 @@
 int main() {
     Network network;
 
-    // 创建多个节点
+    // Creating multiple nodes
     std::vector<std::unique_ptr<Node>> nodes;
     int nodeCount = 4;
     for (int i = 0; i < nodeCount; ++i) {
         nodes.push_back(std::make_unique<Node>(i + 1, &network));
     }
 
-    // 注册节点到网络中
+    // Registering nodes to the network
     for (auto& node : nodes) {
         network.registerNode(node.get());
     }
 
-    // 模拟多轮共识过程
+    // Simulating multiple rounds of consensus process
     for (int round = 0; round < 5; ++round) {
         std::cout << "Starting consensus round " << round + 1 << std::endl;
 
-        // 让每个节点轮流成为提议者
+        // Let each node take turns to be the proposer
         nodes[round % nodeCount]->proposeBlock();
 
-        // 等待每轮共识结束
+        // Wait for each round of consensus to end
         std::this_thread::sleep_for(std::chrono::seconds(3));
 
-        // 模拟延迟
+        // Analog Delay
         std::this_thread::sleep_for(std::chrono::milliseconds(200));
     }
 

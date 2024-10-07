@@ -10,7 +10,7 @@ public:
 
 private:
     static const int NODE_COUNT = 4;
-    static const int TIMEOUT = 1000; // 毫秒
+    static const int TIMEOUT = 1000; // mm
 };
 
 #endif

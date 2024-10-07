@@ -3,7 +3,7 @@
 #include <iostream>
 
 StateMachine::StateMachine() {
-    // 初始化所有节点的账户余额，例如，初始为1000
+    // Initialize the account balance of all nodes, for example, the initial balance is 1000
     balances[1] = 1000.0;
     balances[2] = 1000.0;
     balances[3] = 1000.0;
@@ -16,7 +16,7 @@ void StateMachine::applyTransactions(const std::vector<Transaction>& transaction
         int receiver = tx.getReceiverId();
         double amount = tx.getAmount();
 
-        // 检查余额是否足够
+        // Check if the balance is sufficient
         if (balances[sender] >= amount) {
             balances[sender] -= amount;
             balances[receiver] += amount;

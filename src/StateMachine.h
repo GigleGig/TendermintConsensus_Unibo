@@ -18,7 +18,7 @@ public:
 
 private:
     std::map<int, double> balances;
-    std::vector<std::map<int, double>> snapshots; // 存储状态快照
+    std::vector<std::map<int, double>> snapshots; // Storage Status Snapshot
 };
 
 #endif

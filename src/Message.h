@@ -6,7 +6,8 @@
 enum MessageType {
     PROPOSAL,
     PREVOTE,
-    PRECOMMIT
+    PRECOMMIT,
+    ROLLBACK
 };
 
 class Message {

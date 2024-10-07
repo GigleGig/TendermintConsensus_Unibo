@@ -1,7 +1,7 @@
 #include "Blockchain.h"
 
 Blockchain::Blockchain() {
-    // 创建创世区块
+    // Create the genesis block
     Block genesisBlock(0, "0", {});
     chain.push_back(genesisBlock);
 }

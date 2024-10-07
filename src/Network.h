@@ -10,7 +10,7 @@ class Network {
 public:
     void registerNode(Node* node);
     void broadcastMessage(const Message& message);
-    size_t getTotalNodes() const;  // 将返回类型从 int 改为 size_t
+    size_t getTotalNodes() const;
 
 private:
     std::vector<Node*> nodes;
