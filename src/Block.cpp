@@ -2,16 +2,18 @@
 #include <sstream>
 #include <openssl/sha.h>
 
-Block::Block(int index, const std::string& previousHash, const std::vector<std::string>& transactions)
+Block::Block(int index, const std::string& previousHash, const std::vector<Transaction>& transactions)
     : index(index), previousHash(previousHash), transactions(transactions) {
-    hash = calculateHash();
+    hash = calculateHash();  // 计算区块的哈希
 }
 
 std::string Block::calculateHash() const {
     std::stringstream ss;
     ss << index << previousHash;
+
+    // 遍历每个交易，并将交易的字符串表示添加到哈希输入中
     for (const auto& tx : transactions) {
-        ss << tx;
+        ss << tx.toString();  // 使用 Transaction 类的 toString() 方法
     }
 
     std::string input = ss.str();
@@ -38,6 +40,6 @@ std::string Block::getPreviousHash() const {
     return previousHash;
 }
 
-std::vector<std::string> Block::getTransactions() const {
+const std::vector<Transaction>& Block::getTransactions() const {
     return transactions;
 }

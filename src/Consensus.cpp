@@ -31,20 +31,45 @@ void Consensus::onReceiveMessage(const Message& message) {
 void Consensus::initiateProposal() {
     Utils::log("Node starting consensus - initiating proposal");
 
-    // Assume that the proposer is this node itself
     currentStage = ConsensusStage::PROPOSAL;
     proposalBlockIndex++;
 
-    // Simple hash simulation
-    proposalHash = "Block_" + std::to_string(proposalBlockIndex); 
+    // 获取节点待处理交易
+    std::vector<Transaction> transactions = node->getPendingTransactions();
+    std::vector<Transaction> validTransactions;
 
-    // Create a state snapshot
+    for (const auto& tx : transactions) {
+        int senderId = tx.getSenderId();
+        double amount = tx.getAmount();
+
+        // 验证余额是否充足
+        if (stateMachine->getBalance(senderId) >= amount) {
+            validTransactions.push_back(tx);
+        } else {
+            Utils::log("Transaction failed due to insufficient balance: " + tx.toString());
+        }
+    }
+
+    // 如果没有有效的交易，则不创建新块
+    if (validTransactions.empty()) {
+        Utils::log("No valid transactions to include in the block, aborting consensus.");
+        return;
+    }
+
+    // 创建新块
+    Block newBlock(proposalBlockIndex, node->getBlockchain().getLatestBlock().getHash(), validTransactions);
+    node->getBlockchain().addBlock(newBlock);
+
+    // 清空已被打包的交易
+    node->clearPendingTransactions();
+
+    // 创建快照
     if (stateMachine) {
         stateMachine->createSnapshot();
     }
 
-    // Send proposal message
-    broadcastMessage(MessageType::PROPOSAL, proposalHash);
+    // 发送提案消息
+    broadcastMessage(MessageType::PROPOSAL, newBlock.getHash());
 }
 
 void Consensus::broadcastMessage(MessageType type, const std::string& content) {
@@ -156,4 +181,19 @@ void Consensus::rollbackConsensus() {
     //     Utils::log("Retrying consensus...");
     //     startConsensus(); // Restart consensus
     // }
+}
+
+std::string Consensus::getCurrentStageAsString() const {
+    switch (currentStage) {
+        case ConsensusStage::PROPOSAL:
+            return "PROPOSAL";
+        case ConsensusStage::PREVOTE:
+            return "PREVOTE";
+        case ConsensusStage::PRECOMMIT:
+            return "PRECOMMIT";
+        case ConsensusStage::FINALIZED:
+            return "FINALIZED";
+        default:
+            return "UNKNOWN";
+    }
 }

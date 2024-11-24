@@ -7,7 +7,9 @@
 TEST(ConsensusTest, ConsensusProposal) {
     Network network;
     StateMachine stateMachine;
-    Node node(1, &network);
+
+    // 创建 Node 实例时传入 stateMachine 指针
+    Node node(1, &network, &stateMachine);
     Consensus consensus(&node, &stateMachine);
 
     // Verify by checking if the proposal message was broadcast correctly
@@ -17,8 +19,10 @@ TEST(ConsensusTest, ConsensusProposal) {
 
 TEST(ConsensusTest, ConsensusHandleMessages) {
     Network network;
-    Node node(1, &network);
     StateMachine stateMachine;
+
+    // 创建 Node 实例时传入 stateMachine 指针
+    Node node(1, &network, &stateMachine);
     Consensus consensus(&node, &stateMachine);
 
     // Verify correct processing through logging

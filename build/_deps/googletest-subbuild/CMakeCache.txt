@@ -24,7 +24,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=F:/Visual Studio/CppCode/BlockChain/buil
 CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/googletest-populate
 
 //No help, variable specified on the command line.
-CMAKE_MAKE_PROGRAM:FILEPATH=F:/Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe
+CMAKE_MAKE_PROGRAM:FILEPATH=F:/Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -81,7 +81,7 @@ CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
 CMAKE_GENERATOR:INTERNAL=Visual Studio 17 2022
 //No help, variable specified on the command line.
-CMAKE_GENERATOR_INSTANCE:INTERNAL=F:/Visual Studio/2022/Professional
+CMAKE_GENERATOR_INSTANCE:INTERNAL=F:/Visual Studio/2022/Community
 //Name of generator platform.
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.

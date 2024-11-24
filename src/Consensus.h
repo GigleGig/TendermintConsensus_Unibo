@@ -14,6 +14,8 @@ public:
 
     void startConsensus();
     void onReceiveMessage(const Message& message);
+    void rollbackConsensus();
+    std::string getCurrentStageAsString() const; // 声明 getCurrentStageAsString 方法
 
 private:
     Node* node;
@@ -35,12 +37,10 @@ private:
     void handleProposal(const Message& message);
     void handlePrevote(const Message& message);
     void handlePrecommit(const Message& message);
-
     void initiateProposal();
     void broadcastMessage(MessageType type, const std::string& content);
     void checkForTimeout();
     void finalizeConsensus();
-    void rollbackConsensus();
 };
 
 #endif

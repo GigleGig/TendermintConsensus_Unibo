@@ -23,8 +23,8 @@ events:
       
       The output was:
       0
-      MSBuild version 17.8.3+195e7f5a3 for .NET Framework
-      Build started 10/7/2024 8:00:30 PM.
+      MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+      Build started 11/24/2024 11:01:04 AM.
       
       Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\3.30.0\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -35,15 +35,15 @@ events:
         Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
       ClCompile:
-        F:\\Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        F:\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
         CMakeCCompilerId.c
       Link:
-        F:\\Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        F:\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
         CompilerIdC.vcxproj -> F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\3.30.0\\CompilerIdC\\CompilerIdC.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
-        CMAKE_C_COMPILER=F:\\Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe
+        CMAKE_C_COMPILER=F:\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
@@ -53,7 +53,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.68
+      Time Elapsed 00:00:00.48
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -78,8 +78,8 @@ events:
       
       The output was:
       0
-      MSBuild version 17.8.3+195e7f5a3 for .NET Framework
-      Build started 10/7/2024 8:00:31 PM.
+      MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+      Build started 11/24/2024 11:01:05 AM.
       
       Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\3.30.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -90,15 +90,15 @@ events:
         Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
       ClCompile:
-        F:\\Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        F:\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
         CMakeCXXCompilerId.cpp
       Link:
-        F:\\Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        F:\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
         CompilerIdCXX.vcxproj -> F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\3.30.0\\CompilerIdCXX\\CompilerIdCXX.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
-        CMAKE_CXX_COMPILER=F:\\Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe
+        CMAKE_CXX_COMPILER=F:\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
@@ -108,7 +108,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.52
+      Time Elapsed 00:00:00.51
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -127,8 +127,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-yubluk"
-      binary: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-yubluk"
+      source: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-a2q8j8"
+      binary: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-a2q8j8"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -137,40 +137,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-yubluk'
+        Change Dir: 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-a2q8j8'
         
-        Run Build Command(s): "F:/Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_05857.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
-        Build started 10/7/2024 8:00:31 PM.
+        Run Build Command(s): "F:/Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ce833.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 11/24/2024 11:01:06 AM.
         
-        Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yubluk\\cmTC_05857.vcxproj" on node 1 (default targets).
+        Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a2q8j8\\cmTC_ce833.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_05857.dir\\Debug\\".
+          Creating directory "cmTC_ce833.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yubluk\\Debug\\".
-          Creating directory "cmTC_05857.dir\\Debug\\cmTC_05857.tlog\\".
+          Creating directory "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a2q8j8\\Debug\\".
+          Creating directory "cmTC_ce833.dir\\Debug\\cmTC_ce833.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_05857.dir\\Debug\\cmTC_05857.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_05857.dir\\Debug\\cmTC_05857.tlog\\unsuccessfulbuild".
+          Creating "cmTC_ce833.dir\\Debug\\cmTC_ce833.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_ce833.dir\\Debug\\cmTC_ce833.tlog\\unsuccessfulbuild".
         ClCompile:
-          F:\\Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_05857.dir\\Debug\\\\" /Fd"cmTC_05857.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\CMAKE\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33130 for x64
+          F:\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ce833.dir\\Debug\\\\" /Fd"cmTC_ce833.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\CMAKE\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_05857.dir\\Debug\\\\" /Fd"cmTC_05857.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\CMAKE\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ce833.dir\\Debug\\\\" /Fd"cmTC_ce833.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "E:\\CMAKE\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          F:\\Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yubluk\\Debug\\cmTC_05857.exe" /INCREMENTAL /ILK:"cmTC_05857.dir\\Debug\\cmTC_05857.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-yubluk/Debug/cmTC_05857.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-yubluk/Debug/cmTC_05857.lib" /MACHINE:X64  /machine:x64 cmTC_05857.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_05857.vcxproj -> F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yubluk\\Debug\\cmTC_05857.exe
+          F:\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a2q8j8\\Debug\\cmTC_ce833.exe" /INCREMENTAL /ILK:"cmTC_ce833.dir\\Debug\\cmTC_ce833.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-a2q8j8/Debug/cmTC_ce833.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-a2q8j8/Debug/cmTC_ce833.lib" /MACHINE:X64  /machine:x64 cmTC_ce833.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_ce833.vcxproj -> F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a2q8j8\\Debug\\cmTC_ce833.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_05857.dir\\Debug\\cmTC_05857.tlog\\unsuccessfulbuild".
-          Touching "cmTC_05857.dir\\Debug\\cmTC_05857.tlog\\cmTC_05857.lastbuildstate".
-        Done Building Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yubluk\\cmTC_05857.vcxproj" (default targets).
+          Deleting file "cmTC_ce833.dir\\Debug\\cmTC_ce833.tlog\\unsuccessfulbuild".
+          Touching "cmTC_ce833.dir\\Debug\\cmTC_ce833.tlog\\cmTC_ce833.lastbuildstate".
+        Done Building Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a2q8j8\\cmTC_ce833.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.55
+        Time Elapsed 00:00:00.54
         
       exitCode: 0
   -
@@ -183,7 +183,7 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        linker tool for 'C': F:/Visual Studio/2022/Professional/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe
+        linker tool for 'C': F:/Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe
         implicit libs: []
         implicit objs: []
         implicit dirs: []
@@ -198,8 +198,8 @@ events:
       - "E:/CMAKE/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:5 (project)"
     message: |
-      Running the C compiler's linker: "F:/Visual Studio/2022/Professional/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.38.33130.0
+      Running the C compiler's linker: "F:/Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.41.34123.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
   -
     kind: "try_compile-v1"
@@ -210,8 +210,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-wezg9i"
-      binary: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-wezg9i"
+      source: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-lh3go5"
+      binary: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-lh3go5"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -221,40 +221,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-wezg9i'
+        Change Dir: 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-lh3go5'
         
-        Run Build Command(s): "F:/Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_69199.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
-        Build started 10/7/2024 8:00:32 PM.
+        Run Build Command(s): "F:/Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4b74b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 11/24/2024 11:01:07 AM.
         
-        Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wezg9i\\cmTC_69199.vcxproj" on node 1 (default targets).
+        Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lh3go5\\cmTC_4b74b.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_69199.dir\\Debug\\".
+          Creating directory "cmTC_4b74b.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wezg9i\\Debug\\".
-          Creating directory "cmTC_69199.dir\\Debug\\cmTC_69199.tlog\\".
+          Creating directory "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lh3go5\\Debug\\".
+          Creating directory "cmTC_4b74b.dir\\Debug\\cmTC_4b74b.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_69199.dir\\Debug\\cmTC_69199.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_69199.dir\\Debug\\cmTC_69199.tlog\\unsuccessfulbuild".
+          Creating "cmTC_4b74b.dir\\Debug\\cmTC_4b74b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_4b74b.dir\\Debug\\cmTC_4b74b.tlog\\unsuccessfulbuild".
         ClCompile:
-          F:\\Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_69199.dir\\Debug\\\\" /Fd"cmTC_69199.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\CMAKE\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33130 for x64
+          F:\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4b74b.dir\\Debug\\\\" /Fd"cmTC_4b74b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\CMAKE\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_69199.dir\\Debug\\\\" /Fd"cmTC_69199.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\CMAKE\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4b74b.dir\\Debug\\\\" /Fd"cmTC_4b74b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\CMAKE\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          F:\\Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wezg9i\\Debug\\cmTC_69199.exe" /INCREMENTAL /ILK:"cmTC_69199.dir\\Debug\\cmTC_69199.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-wezg9i/Debug/cmTC_69199.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-wezg9i/Debug/cmTC_69199.lib" /MACHINE:X64  /machine:x64 cmTC_69199.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_69199.vcxproj -> F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wezg9i\\Debug\\cmTC_69199.exe
+          F:\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lh3go5\\Debug\\cmTC_4b74b.exe" /INCREMENTAL /ILK:"cmTC_4b74b.dir\\Debug\\cmTC_4b74b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-lh3go5/Debug/cmTC_4b74b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-lh3go5/Debug/cmTC_4b74b.lib" /MACHINE:X64  /machine:x64 cmTC_4b74b.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_4b74b.vcxproj -> F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lh3go5\\Debug\\cmTC_4b74b.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_69199.dir\\Debug\\cmTC_69199.tlog\\unsuccessfulbuild".
-          Touching "cmTC_69199.dir\\Debug\\cmTC_69199.tlog\\cmTC_69199.lastbuildstate".
-        Done Building Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wezg9i\\cmTC_69199.vcxproj" (default targets).
+          Deleting file "cmTC_4b74b.dir\\Debug\\cmTC_4b74b.tlog\\unsuccessfulbuild".
+          Touching "cmTC_4b74b.dir\\Debug\\cmTC_4b74b.tlog\\cmTC_4b74b.lastbuildstate".
+        Done Building Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lh3go5\\cmTC_4b74b.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.55
+        Time Elapsed 00:00:00.54
         
       exitCode: 0
   -
@@ -267,7 +267,7 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        linker tool for 'CXX': F:/Visual Studio/2022/Professional/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe
+        linker tool for 'CXX': F:/Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe
         implicit libs: []
         implicit objs: []
         implicit dirs: []
@@ -282,8 +282,8 @@ events:
       - "E:/CMAKE/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:5 (project)"
     message: |
-      Running the CXX compiler's linker: "F:/Visual Studio/2022/Professional/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.38.33130.0
+      Running the CXX compiler's linker: "F:/Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.41.34123.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
   -
     kind: "try_compile-v1"
@@ -297,8 +297,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-e4vngs"
-      binary: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-e4vngs"
+      source: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-bgp3qa"
+      binary: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-bgp3qa"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -306,40 +306,40 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-e4vngs'
+        Change Dir: 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-bgp3qa'
         
-        Run Build Command(s): "F:/Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9fe9b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
-        Build started 10/7/2024 8:00:37 PM.
+        Run Build Command(s): "F:/Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1d925.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 11/24/2024 11:01:10 AM.
         
-        Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e4vngs\\cmTC_9fe9b.vcxproj" on node 1 (default targets).
+        Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bgp3qa\\cmTC_1d925.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_9fe9b.dir\\Debug\\".
+          Creating directory "cmTC_1d925.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e4vngs\\Debug\\".
-          Creating directory "cmTC_9fe9b.dir\\Debug\\cmTC_9fe9b.tlog\\".
+          Creating directory "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bgp3qa\\Debug\\".
+          Creating directory "cmTC_1d925.dir\\Debug\\cmTC_1d925.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_9fe9b.dir\\Debug\\cmTC_9fe9b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_9fe9b.dir\\Debug\\cmTC_9fe9b.tlog\\unsuccessfulbuild".
+          Creating "cmTC_1d925.dir\\Debug\\cmTC_1d925.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1d925.dir\\Debug\\cmTC_1d925.tlog\\unsuccessfulbuild".
         ClCompile:
-          F:\\Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9fe9b.dir\\Debug\\\\" /Fd"cmTC_9fe9b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e4vngs\\src.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33130 for x64
+          F:\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1d925.dir\\Debug\\\\" /Fd"cmTC_1d925.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bgp3qa\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9fe9b.dir\\Debug\\\\" /Fd"cmTC_9fe9b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e4vngs\\src.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1d925.dir\\Debug\\\\" /Fd"cmTC_1d925.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bgp3qa\\src.c"
           src.c
-        F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e4vngs\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e4vngs\\cmTC_9fe9b.vcxproj]
-        Done Building Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e4vngs\\cmTC_9fe9b.vcxproj" (default targets) -- FAILED.
+        F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bgp3qa\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bgp3qa\\cmTC_1d925.vcxproj]
+        Done Building Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bgp3qa\\cmTC_1d925.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e4vngs\\cmTC_9fe9b.vcxproj" (default target) (1) ->
+        "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bgp3qa\\cmTC_1d925.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e4vngs\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e4vngs\\cmTC_9fe9b.vcxproj]
+          F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bgp3qa\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bgp3qa\\cmTC_1d925.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.32
+        Time Elapsed 00:00:00.28
         
       exitCode: 1
   -
@@ -353,8 +353,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-2k4ct6"
-      binary: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-2k4ct6"
+      source: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-6ym5xk"
+      binary: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-6ym5xk"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -362,42 +362,42 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-2k4ct6'
+        Change Dir: 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-6ym5xk'
         
-        Run Build Command(s): "F:/Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3a8a3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
-        Build started 10/7/2024 8:00:37 PM.
+        Run Build Command(s): "F:/Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5cbc1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 11/24/2024 11:01:11 AM.
         
-        Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2k4ct6\\cmTC_3a8a3.vcxproj" on node 1 (default targets).
+        Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6ym5xk\\cmTC_5cbc1.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_3a8a3.dir\\Debug\\".
+          Creating directory "cmTC_5cbc1.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2k4ct6\\Debug\\".
-          Creating directory "cmTC_3a8a3.dir\\Debug\\cmTC_3a8a3.tlog\\".
+          Creating directory "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6ym5xk\\Debug\\".
+          Creating directory "cmTC_5cbc1.dir\\Debug\\cmTC_5cbc1.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_3a8a3.dir\\Debug\\cmTC_3a8a3.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_3a8a3.dir\\Debug\\cmTC_3a8a3.tlog\\unsuccessfulbuild".
+          Creating "cmTC_5cbc1.dir\\Debug\\cmTC_5cbc1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_5cbc1.dir\\Debug\\cmTC_5cbc1.tlog\\unsuccessfulbuild".
         ClCompile:
-          F:\\Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3a8a3.dir\\Debug\\\\" /Fd"cmTC_3a8a3.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2k4ct6\\CheckFunctionExists.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33130 for x64
+          F:\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5cbc1.dir\\Debug\\\\" /Fd"cmTC_5cbc1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6ym5xk\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3a8a3.dir\\Debug\\\\" /Fd"cmTC_3a8a3.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2k4ct6\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5cbc1.dir\\Debug\\\\" /Fd"cmTC_5cbc1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6ym5xk\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          F:\\Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2k4ct6\\Debug\\cmTC_3a8a3.exe" /INCREMENTAL /ILK:"cmTC_3a8a3.dir\\Debug\\cmTC_3a8a3.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-2k4ct6/Debug/cmTC_3a8a3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-2k4ct6/Debug/cmTC_3a8a3.lib" /MACHINE:X64  /machine:x64 cmTC_3a8a3.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2k4ct6\\cmTC_3a8a3.vcxproj]
-        Done Building Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2k4ct6\\cmTC_3a8a3.vcxproj" (default targets) -- FAILED.
+          F:\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6ym5xk\\Debug\\cmTC_5cbc1.exe" /INCREMENTAL /ILK:"cmTC_5cbc1.dir\\Debug\\cmTC_5cbc1.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-6ym5xk/Debug/cmTC_5cbc1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-6ym5xk/Debug/cmTC_5cbc1.lib" /MACHINE:X64  /machine:x64 cmTC_5cbc1.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6ym5xk\\cmTC_5cbc1.vcxproj]
+        Done Building Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6ym5xk\\cmTC_5cbc1.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2k4ct6\\cmTC_3a8a3.vcxproj" (default target) (1) ->
+        "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6ym5xk\\cmTC_5cbc1.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2k4ct6\\cmTC_3a8a3.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6ym5xk\\cmTC_5cbc1.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.40
+        Time Elapsed 00:00:00.41
         
       exitCode: 1
   -
@@ -411,8 +411,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-oopjd4"
-      binary: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-oopjd4"
+      source: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-ycj5pn"
+      binary: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-ycj5pn"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -420,685 +420,42 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-oopjd4'
+        Change Dir: 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-ycj5pn'
         
-        Run Build Command(s): "F:/Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_749e2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
-        Build started 10/7/2024 8:00:38 PM.
+        Run Build Command(s): "F:/Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1fb63.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 11/24/2024 11:01:11 AM.
         
-        Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oopjd4\\cmTC_749e2.vcxproj" on node 1 (default targets).
+        Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ycj5pn\\cmTC_1fb63.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_749e2.dir\\Debug\\".
+          Creating directory "cmTC_1fb63.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oopjd4\\Debug\\".
-          Creating directory "cmTC_749e2.dir\\Debug\\cmTC_749e2.tlog\\".
+          Creating directory "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ycj5pn\\Debug\\".
+          Creating directory "cmTC_1fb63.dir\\Debug\\cmTC_1fb63.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_749e2.dir\\Debug\\cmTC_749e2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_749e2.dir\\Debug\\cmTC_749e2.tlog\\unsuccessfulbuild".
+          Creating "cmTC_1fb63.dir\\Debug\\cmTC_1fb63.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1fb63.dir\\Debug\\cmTC_1fb63.tlog\\unsuccessfulbuild".
         ClCompile:
-          F:\\Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_749e2.dir\\Debug\\\\" /Fd"cmTC_749e2.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oopjd4\\CheckFunctionExists.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33130 for x64
+          F:\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1fb63.dir\\Debug\\\\" /Fd"cmTC_1fb63.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ycj5pn\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_749e2.dir\\Debug\\\\" /Fd"cmTC_749e2.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oopjd4\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1fb63.dir\\Debug\\\\" /Fd"cmTC_1fb63.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ycj5pn\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          F:\\Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oopjd4\\Debug\\cmTC_749e2.exe" /INCREMENTAL /ILK:"cmTC_749e2.dir\\Debug\\cmTC_749e2.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-oopjd4/Debug/cmTC_749e2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-oopjd4/Debug/cmTC_749e2.lib" /MACHINE:X64  /machine:x64 cmTC_749e2.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oopjd4\\cmTC_749e2.vcxproj]
-        Done Building Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oopjd4\\cmTC_749e2.vcxproj" (default targets) -- FAILED.
+          F:\\Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ycj5pn\\Debug\\cmTC_1fb63.exe" /INCREMENTAL /ILK:"cmTC_1fb63.dir\\Debug\\cmTC_1fb63.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-ycj5pn/Debug/cmTC_1fb63.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-ycj5pn/Debug/cmTC_1fb63.lib" /MACHINE:X64  /machine:x64 cmTC_1fb63.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ycj5pn\\cmTC_1fb63.vcxproj]
+        Done Building Project "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ycj5pn\\cmTC_1fb63.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oopjd4\\cmTC_749e2.vcxproj" (default target) (1) ->
+        "F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ycj5pn\\cmTC_1fb63.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oopjd4\\cmTC_749e2.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [F:\\Visual Studio\\CppCode\\BlockChain\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ycj5pn\\cmTC_1fb63.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.40
+        Time Elapsed 00:00:00.39
         
       exitCode: 1
-...
-
----
-events:
-  -
-    kind: "message-v1"
-    backtrace:
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      The system is: Windows - 10.0.22631 - AMD64
-  -
-    kind: "message-v1"
-    backtrace:
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: F:/msys2/mingw64/bin/gcc.exe 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      0
-      
-      
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
-      
-      The C compiler identification is GNU, found in:
-        F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/3.30.0/CompilerIdC/a.exe
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: F:/msys2/mingw64/bin/g++.exe 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      0
-      
-      
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
-      
-      The CXX compiler identification is GNU, found in:
-        F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/3.30.0/CompilerIdCXX/a.exe
-      
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-1i56ow"
-      binary: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-1i56ow"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-1i56ow'
-        
-        Run Build Command(s): E:/CMAKE/bin/cmake.exe -E env VERBOSE=1 F:/Strawberry/c/bin/mingw32-make.exe -f Makefile cmTC_2c0b5/fast
-        F:/Strawberry/c/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_2c0b5.dir\\build.make CMakeFiles/cmTC_2c0b5.dir/build
-        mingw32-make[1]: Entering directory 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-1i56ow'
-        Building C object CMakeFiles/cmTC_2c0b5.dir/CMakeCCompilerABI.c.obj
-        F:\\msys2\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_2c0b5.dir\\CMakeCCompilerABI.c.obj -c E:\\CMAKE\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c
-        Using built-in specs.
-        COLLECT_GCC=F:\\msys2\\mingw64\\bin\\gcc.exe
-        Target: x86_64-w64-mingw32
-        Configured with: ../gcc-14.1.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,rust,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev3, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 14.1.0 (Rev3, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2c0b5.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2c0b5.dir\\'
-         F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/cc1.exe -quiet -v -iprefix F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/ -D_REENTRANT E:\\CMAKE\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_2c0b5.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccLd8oaa.s
-        GNU C17 (Rev3, Built by MSYS2 project) version 14.1.0 (x86_64-w64-mingw32)
-        	compiled by GNU C version 14.1.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
-        
-        warning: GMP header version 6.3.0 differs from library version 6.2.1.
-        warning: MPFR header version 4.2.1 differs from library version 4.2.0.
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring nonexistent directory "F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include"
-        ignoring duplicate directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/include"
-        ignoring nonexistent directory "D:/a/msys64/mingw64/include"
-        ignoring nonexistent directory "/mingw64/include"
-        ignoring duplicate directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed"
-        ignoring nonexistent directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include"
-        ignoring nonexistent directory "D:/a/msys64/mingw64/include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include
-         F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include
-         F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed
-        End of search list.
-        Compiler executable checksum: 7c3b67c3cf2202017ebc74aa340ae1c2
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2c0b5.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2c0b5.dir\\'
-         F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_2c0b5.dir\\CMakeCCompilerABI.c.obj C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccLd8oaa.s
-        GNU assembler version 2.42 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.42
-        COMPILER_PATH=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/;F:/msys2/mingw64/bin/../lib/gcc/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/
-        LIBRARY_PATH=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/;F:/msys2/mingw64/bin/../lib/gcc/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2c0b5.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2c0b5.dir\\CMakeCCompilerABI.c.'
-        Linking C executable cmTC_2c0b5.exe
-        E:\\CMAKE\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_2c0b5.dir\\link.txt --verbose=1
-        E:\\CMAKE\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_2c0b5.dir/objects.a
-        F:\\msys2\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_2c0b5.dir/objects.a @CMakeFiles\\cmTC_2c0b5.dir\\objects1.rsp
-        F:\\msys2\\mingw64\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_2c0b5.dir/objects.a -Wl,--no-whole-archive -o cmTC_2c0b5.exe -Wl,--out-implib,libcmTC_2c0b5.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        Using built-in specs.
-        COLLECT_GCC=F:\\msys2\\mingw64\\bin\\gcc.exe
-        COLLECT_LTO_WRAPPER=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper.exe
-        Target: x86_64-w64-mingw32
-        Configured with: ../gcc-14.1.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,rust,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev3, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 14.1.0 (Rev3, Built by MSYS2 project) 
-        COMPILER_PATH=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/;F:/msys2/mingw64/bin/../lib/gcc/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/
-        LIBRARY_PATH=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/;F:/msys2/mingw64/bin/../lib/gcc/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2c0b5.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_2c0b5.'
-         F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/collect2.exe -plugin F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/liblto_plugin.dll -plugin-opt=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccrJww6k.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_2c0b5.exe F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/crt2.o F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0 -LF:/msys2/mingw64/bin/../lib/gcc -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_2c0b5.dir/objects.a --no-whole-archive --out-implib libcmTC_2c0b5.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/default-manifest.o F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o
-        collect2 version 14.1.0
-        F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/liblto_plugin.dll -plugin-opt=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccrJww6k.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_2c0b5.exe F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/crt2.o F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0 -LF:/msys2/mingw64/bin/../lib/gcc -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_2c0b5.dir/objects.a --no-whole-archive --out-implib libcmTC_2c0b5.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/default-manifest.o F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o
-        GNU ld (GNU Binutils) 2.42
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2c0b5.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_2c0b5.'
-        mingw32-make[1]: Leaving directory 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-1i56ow'
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      Parsed C implicit include dir info: rv=done
-        found start of include info
-        found start of implicit include info
-          add: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include]
-          add: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include]
-          add: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed]
-        end of search list found
-        collapse include dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include] ==> [F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include]
-        collapse include dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include] ==> [F:/msys2/mingw64/include]
-        collapse include dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed] ==> [F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed]
-        implicit include dirs: [F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include;F:/msys2/mingw64/include;F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed]
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-1i56ow']
-        ignore line: []
-        ignore line: [Run Build Command(s): E:/CMAKE/bin/cmake.exe -E env VERBOSE=1 F:/Strawberry/c/bin/mingw32-make.exe -f Makefile cmTC_2c0b5/fast]
-        ignore line: [F:/Strawberry/c/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_2c0b5.dir\\build.make CMakeFiles/cmTC_2c0b5.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-1i56ow']
-        ignore line: [Building C object CMakeFiles/cmTC_2c0b5.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [F:\\msys2\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_2c0b5.dir\\CMakeCCompilerABI.c.obj -c E:\\CMAKE\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=F:\\msys2\\mingw64\\bin\\gcc.exe]
-        ignore line: [Target: x86_64-w64-mingw32]
-        ignore line: [Configured with: ../gcc-14.1.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,rust,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev3, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 14.1.0 (Rev3  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2c0b5.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2c0b5.dir\\']
-        ignore line: [ F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/cc1.exe -quiet -v -iprefix F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/ -D_REENTRANT E:\\CMAKE\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_2c0b5.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccLd8oaa.s]
-        ignore line: [GNU C17 (Rev3  Built by MSYS2 project) version 14.1.0 (x86_64-w64-mingw32)]
-        ignore line: [	compiled by GNU C version 14.1.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
-        ignore line: []
-        ignore line: [warning: GMP header version 6.3.0 differs from library version 6.2.1.]
-        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.0.]
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring nonexistent directory "F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include"]
-        ignore line: [ignoring duplicate directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/include"]
-        ignore line: [ignoring nonexistent directory "D:/a/msys64/mingw64/include"]
-        ignore line: [ignoring nonexistent directory "/mingw64/include"]
-        ignore line: [ignoring duplicate directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed"]
-        ignore line: [ignoring nonexistent directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include"]
-        ignore line: [ignoring nonexistent directory "D:/a/msys64/mingw64/include"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include]
-        ignore line: [ F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include]
-        ignore line: [ F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed]
-        ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: 7c3b67c3cf2202017ebc74aa340ae1c2]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2c0b5.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2c0b5.dir\\']
-        ignore line: [ F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_2c0b5.dir\\CMakeCCompilerABI.c.obj C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccLd8oaa.s]
-        ignore line: [GNU assembler version 2.42 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.42]
-        ignore line: [COMPILER_PATH=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/]
-        ignore line: [LIBRARY_PATH=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2c0b5.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2c0b5.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_2c0b5.exe]
-        ignore line: [E:\\CMAKE\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_2c0b5.dir\\link.txt --verbose=1]
-        ignore line: [E:\\CMAKE\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_2c0b5.dir/objects.a]
-        ignore line: [F:\\msys2\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_2c0b5.dir/objects.a @CMakeFiles\\cmTC_2c0b5.dir\\objects1.rsp]
-        ignore line: [F:\\msys2\\mingw64\\bin\\gcc.exe  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_2c0b5.dir/objects.a -Wl --no-whole-archive -o cmTC_2c0b5.exe -Wl --out-implib libcmTC_2c0b5.dll.a -Wl --major-image-version 0 --minor-image-version 0]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=F:\\msys2\\mingw64\\bin\\gcc.exe]
-        ignore line: [COLLECT_LTO_WRAPPER=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper.exe]
-        ignore line: [Target: x86_64-w64-mingw32]
-        ignore line: [Configured with: ../gcc-14.1.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,rust,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev3, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 14.1.0 (Rev3  Built by MSYS2 project) ]
-        ignore line: [COMPILER_PATH=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/]
-        ignore line: [LIBRARY_PATH=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2c0b5.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_2c0b5.']
-        link line: [ F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/collect2.exe -plugin F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/liblto_plugin.dll -plugin-opt=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccrJww6k.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_2c0b5.exe F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/crt2.o F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0 -LF:/msys2/mingw64/bin/../lib/gcc -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_2c0b5.dir/objects.a --no-whole-archive --out-implib libcmTC_2c0b5.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/default-manifest.o F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o]
-          arg [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/collect2.exe] ==> ignore
-          arg [-plugin] ==> ignore
-          arg [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/liblto_plugin.dll] ==> ignore
-          arg [-plugin-opt=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccrJww6k.res] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
-          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
-          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-          arg [-m] ==> ignore
-          arg [i386pep] ==> ignore
-          arg [-Bdynamic] ==> search dynamic
-          arg [-o] ==> ignore
-          arg [cmTC_2c0b5.exe] ==> ignore
-          arg [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/crt2.o] ==> obj [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/crt2.o]
-          arg [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o] ==> obj [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o]
-          arg [-LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0] ==> dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0]
-          arg [-LF:/msys2/mingw64/bin/../lib/gcc] ==> dir [F:/msys2/mingw64/bin/../lib/gcc]
-          arg [-LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib]
-          arg [-LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib] ==> dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib]
-          arg [-LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib] ==> dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib]
-          arg [-LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../..] ==> dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../..]
-          arg [-v] ==> ignore
-          arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_2c0b5.dir/objects.a] ==> ignore
-          arg [--no-whole-archive] ==> ignore
-          arg [--out-implib] ==> ignore
-          arg [libcmTC_2c0b5.dll.a] ==> ignore
-          arg [--major-image-version] ==> ignore
-          arg [0] ==> ignore
-          arg [--minor-image-version] ==> ignore
-          arg [0] ==> ignore
-          arg [-lmingw32] ==> lib [mingw32]
-          arg [-lgcc] ==> lib [gcc]
-          arg [-lgcc_eh] ==> lib [gcc_eh]
-          arg [-lmingwex] ==> lib [mingwex]
-          arg [-lmsvcrt] ==> lib [msvcrt]
-          arg [-lkernel32] ==> lib [kernel32]
-          arg [-lpthread] ==> lib [pthread]
-          arg [-ladvapi32] ==> lib [advapi32]
-          arg [-lshell32] ==> lib [shell32]
-          arg [-luser32] ==> lib [user32]
-          arg [-lkernel32] ==> lib [kernel32]
-          arg [-lmingw32] ==> lib [mingw32]
-          arg [-lgcc] ==> lib [gcc]
-          arg [-lgcc_eh] ==> lib [gcc_eh]
-          arg [-lmingwex] ==> lib [mingwex]
-          arg [-lmsvcrt] ==> lib [msvcrt]
-          arg [-lkernel32] ==> lib [kernel32]
-          arg [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/default-manifest.o] ==> obj [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/default-manifest.o]
-          arg [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o] ==> obj [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o]
-        ignore line: [collect2 version 14.1.0]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/liblto_plugin.dll -plugin-opt=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccrJww6k.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_2c0b5.exe F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/crt2.o F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0 -LF:/msys2/mingw64/bin/../lib/gcc -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_2c0b5.dir/objects.a --no-whole-archive --out-implib libcmTC_2c0b5.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/default-manifest.o F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o]
-        linker tool for 'C': F:/msys2/mingw64/x86_64-w64-mingw32/bin/ld.exe
-        remove lib [gcc_eh]
-        remove lib [msvcrt]
-        remove lib [gcc_eh]
-        remove lib [msvcrt]
-        collapse obj [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/crt2.o] ==> [F:/msys2/mingw64/lib/crt2.o]
-        collapse obj [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o] ==> [F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o]
-        collapse obj [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/default-manifest.o] ==> [F:/msys2/mingw64/lib/default-manifest.o]
-        collapse obj [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o] ==> [F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o]
-        collapse library dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0] ==> [F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0]
-        collapse library dir [F:/msys2/mingw64/bin/../lib/gcc] ==> [F:/msys2/mingw64/lib/gcc]
-        collapse library dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [F:/msys2/mingw64/x86_64-w64-mingw32/lib]
-        collapse library dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib] ==> [F:/msys2/mingw64/lib]
-        collapse library dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib] ==> [F:/msys2/mingw64/x86_64-w64-mingw32/lib]
-        collapse library dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../..] ==> [F:/msys2/mingw64/lib]
-        implicit libs: [mingw32;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;mingwex;kernel32]
-        implicit objs: [F:/msys2/mingw64/lib/crt2.o;F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o;F:/msys2/mingw64/lib/default-manifest.o;F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o]
-        implicit dirs: [F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0;F:/msys2/mingw64/lib/gcc;F:/msys2/mingw64/x86_64-w64-mingw32/lib;F:/msys2/mingw64/lib]
-        implicit fwks: []
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "E:/CMAKE/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      Running the C compiler's linker: "F:/msys2/mingw64/x86_64-w64-mingw32/bin/ld.exe" "-v"
-      GNU ld (GNU Binutils) 2.42
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
-    checks:
-      - "Detecting CXX compiler ABI info"
-    directories:
-      source: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-nnfv7c"
-      binary: "F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-nnfv7c"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_CXX_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-nnfv7c'
-        
-        Run Build Command(s): E:/CMAKE/bin/cmake.exe -E env VERBOSE=1 F:/Strawberry/c/bin/mingw32-make.exe -f Makefile cmTC_81916/fast
-        F:/Strawberry/c/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_81916.dir\\build.make CMakeFiles/cmTC_81916.dir/build
-        mingw32-make[1]: Entering directory 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-nnfv7c'
-        Building CXX object CMakeFiles/cmTC_81916.dir/CMakeCXXCompilerABI.cpp.obj
-        F:\\msys2\\mingw64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_81916.dir\\CMakeCXXCompilerABI.cpp.obj -c E:\\CMAKE\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp
-        Using built-in specs.
-        COLLECT_GCC=F:\\msys2\\mingw64\\bin\\g++.exe
-        Target: x86_64-w64-mingw32
-        Configured with: ../gcc-14.1.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,rust,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev3, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 14.1.0 (Rev3, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_81916.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_81916.dir\\'
-         F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/cc1plus.exe -quiet -v -iprefix F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/ -D_REENTRANT E:\\CMAKE\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_81916.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccXVnNlH.s
-        GNU C++17 (Rev3, Built by MSYS2 project) version 14.1.0 (x86_64-w64-mingw32)
-        	compiled by GNU C version 14.1.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
-        
-        warning: GMP header version 6.3.0 differs from library version 6.2.1.
-        warning: MPFR header version 4.2.1 differs from library version 4.2.0.
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring nonexistent directory "F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include"
-        ignoring duplicate directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0"
-        ignoring duplicate directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0/x86_64-w64-mingw32"
-        ignoring duplicate directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0/backward"
-        ignoring duplicate directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/include"
-        ignoring nonexistent directory "D:/a/msys64/mingw64/include"
-        ignoring nonexistent directory "/mingw64/include"
-        ignoring duplicate directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed"
-        ignoring nonexistent directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include"
-        ignoring nonexistent directory "D:/a/msys64/mingw64/include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0
-         F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0/x86_64-w64-mingw32
-         F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0/backward
-         F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include
-         F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include
-         F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed
-        End of search list.
-        Compiler executable checksum: e7fc93bdd94dee4900ca4f030d792a91
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_81916.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_81916.dir\\'
-         F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_81916.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccXVnNlH.s
-        GNU assembler version 2.42 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.42
-        COMPILER_PATH=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/;F:/msys2/mingw64/bin/../lib/gcc/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/
-        LIBRARY_PATH=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/;F:/msys2/mingw64/bin/../lib/gcc/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_81916.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_81916.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_81916.exe
-        E:\\CMAKE\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_81916.dir\\link.txt --verbose=1
-        E:\\CMAKE\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_81916.dir/objects.a
-        F:\\msys2\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_81916.dir/objects.a @CMakeFiles\\cmTC_81916.dir\\objects1.rsp
-        F:\\msys2\\mingw64\\bin\\g++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_81916.dir/objects.a -Wl,--no-whole-archive -o cmTC_81916.exe -Wl,--out-implib,libcmTC_81916.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        Using built-in specs.
-        COLLECT_GCC=F:\\msys2\\mingw64\\bin\\g++.exe
-        COLLECT_LTO_WRAPPER=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper.exe
-        Target: x86_64-w64-mingw32
-        Configured with: ../gcc-14.1.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,rust,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev3, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 14.1.0 (Rev3, Built by MSYS2 project) 
-        COMPILER_PATH=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/;F:/msys2/mingw64/bin/../lib/gcc/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/
-        LIBRARY_PATH=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/;F:/msys2/mingw64/bin/../lib/gcc/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/;F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_81916.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_81916.'
-         F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/collect2.exe -plugin F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/liblto_plugin.dll -plugin-opt=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccJCH4zR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_81916.exe F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/crt2.o F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0 -LF:/msys2/mingw64/bin/../lib/gcc -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_81916.dir/objects.a --no-whole-archive --out-implib libcmTC_81916.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/default-manifest.o F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o
-        collect2 version 14.1.0
-        F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/liblto_plugin.dll -plugin-opt=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccJCH4zR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_81916.exe F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/crt2.o F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0 -LF:/msys2/mingw64/bin/../lib/gcc -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_81916.dir/objects.a --no-whole-archive --out-implib libcmTC_81916.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/default-manifest.o F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o
-        GNU ld (GNU Binutils) 2.42
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_81916.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_81916.'
-        mingw32-make[1]: Leaving directory 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-nnfv7c'
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      Parsed CXX implicit include dir info: rv=done
-        found start of include info
-        found start of implicit include info
-          add: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0]
-          add: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0/x86_64-w64-mingw32]
-          add: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0/backward]
-          add: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include]
-          add: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include]
-          add: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed]
-        end of search list found
-        collapse include dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0] ==> [F:/msys2/mingw64/include/c++/14.1.0]
-        collapse include dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0/x86_64-w64-mingw32] ==> [F:/msys2/mingw64/include/c++/14.1.0/x86_64-w64-mingw32]
-        collapse include dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0/backward] ==> [F:/msys2/mingw64/include/c++/14.1.0/backward]
-        collapse include dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include] ==> [F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include]
-        collapse include dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include] ==> [F:/msys2/mingw64/include]
-        collapse include dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed] ==> [F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed]
-        implicit include dirs: [F:/msys2/mingw64/include/c++/14.1.0;F:/msys2/mingw64/include/c++/14.1.0/x86_64-w64-mingw32;F:/msys2/mingw64/include/c++/14.1.0/backward;F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include;F:/msys2/mingw64/include;F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed]
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      Parsed CXX implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-nnfv7c']
-        ignore line: []
-        ignore line: [Run Build Command(s): E:/CMAKE/bin/cmake.exe -E env VERBOSE=1 F:/Strawberry/c/bin/mingw32-make.exe -f Makefile cmTC_81916/fast]
-        ignore line: [F:/Strawberry/c/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_81916.dir\\build.make CMakeFiles/cmTC_81916.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'F:/Visual Studio/CppCode/BlockChain/build/CMakeFiles/CMakeScratch/TryCompile-nnfv7c']
-        ignore line: [Building CXX object CMakeFiles/cmTC_81916.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [F:\\msys2\\mingw64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_81916.dir\\CMakeCXXCompilerABI.cpp.obj -c E:\\CMAKE\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=F:\\msys2\\mingw64\\bin\\g++.exe]
-        ignore line: [Target: x86_64-w64-mingw32]
-        ignore line: [Configured with: ../gcc-14.1.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,rust,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev3, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 14.1.0 (Rev3  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_81916.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_81916.dir\\']
-        ignore line: [ F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/cc1plus.exe -quiet -v -iprefix F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/ -D_REENTRANT E:\\CMAKE\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_81916.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccXVnNlH.s]
-        ignore line: [GNU C++17 (Rev3  Built by MSYS2 project) version 14.1.0 (x86_64-w64-mingw32)]
-        ignore line: [	compiled by GNU C version 14.1.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
-        ignore line: []
-        ignore line: [warning: GMP header version 6.3.0 differs from library version 6.2.1.]
-        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.0.]
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring nonexistent directory "F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include"]
-        ignore line: [ignoring duplicate directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0"]
-        ignore line: [ignoring duplicate directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0/x86_64-w64-mingw32"]
-        ignore line: [ignoring duplicate directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0/backward"]
-        ignore line: [ignoring duplicate directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/include"]
-        ignore line: [ignoring nonexistent directory "D:/a/msys64/mingw64/include"]
-        ignore line: [ignoring nonexistent directory "/mingw64/include"]
-        ignore line: [ignoring duplicate directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed"]
-        ignore line: [ignoring nonexistent directory "F:/msys2/mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/include"]
-        ignore line: [ignoring nonexistent directory "D:/a/msys64/mingw64/include"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0]
-        ignore line: [ F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0/x86_64-w64-mingw32]
-        ignore line: [ F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0/backward]
-        ignore line: [ F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include]
-        ignore line: [ F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include]
-        ignore line: [ F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed]
-        ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: e7fc93bdd94dee4900ca4f030d792a91]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_81916.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_81916.dir\\']
-        ignore line: [ F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_81916.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccXVnNlH.s]
-        ignore line: [GNU assembler version 2.42 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.42]
-        ignore line: [COMPILER_PATH=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/]
-        ignore line: [LIBRARY_PATH=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_81916.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_81916.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_81916.exe]
-        ignore line: [E:\\CMAKE\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_81916.dir\\link.txt --verbose=1]
-        ignore line: [E:\\CMAKE\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_81916.dir/objects.a]
-        ignore line: [F:\\msys2\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_81916.dir/objects.a @CMakeFiles\\cmTC_81916.dir\\objects1.rsp]
-        ignore line: [F:\\msys2\\mingw64\\bin\\g++.exe  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_81916.dir/objects.a -Wl --no-whole-archive -o cmTC_81916.exe -Wl --out-implib libcmTC_81916.dll.a -Wl --major-image-version 0 --minor-image-version 0]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=F:\\msys2\\mingw64\\bin\\g++.exe]
-        ignore line: [COLLECT_LTO_WRAPPER=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper.exe]
-        ignore line: [Target: x86_64-w64-mingw32]
-        ignore line: [Configured with: ../gcc-14.1.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,rust,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev3, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 14.1.0 (Rev3  Built by MSYS2 project) ]
-        ignore line: [COMPILER_PATH=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/]
-        ignore line: [LIBRARY_PATH=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_81916.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_81916.']
-        link line: [ F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/collect2.exe -plugin F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/liblto_plugin.dll -plugin-opt=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccJCH4zR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_81916.exe F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/crt2.o F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0 -LF:/msys2/mingw64/bin/../lib/gcc -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_81916.dir/objects.a --no-whole-archive --out-implib libcmTC_81916.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/default-manifest.o F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o]
-          arg [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/collect2.exe] ==> ignore
-          arg [-plugin] ==> ignore
-          arg [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/liblto_plugin.dll] ==> ignore
-          arg [-plugin-opt=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccJCH4zR.res] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
-          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
-          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
-          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
-          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
-          arg [-m] ==> ignore
-          arg [i386pep] ==> ignore
-          arg [-Bdynamic] ==> search dynamic
-          arg [-o] ==> ignore
-          arg [cmTC_81916.exe] ==> ignore
-          arg [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/crt2.o] ==> obj [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/crt2.o]
-          arg [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o] ==> obj [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o]
-          arg [-LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0] ==> dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0]
-          arg [-LF:/msys2/mingw64/bin/../lib/gcc] ==> dir [F:/msys2/mingw64/bin/../lib/gcc]
-          arg [-LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib]
-          arg [-LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib] ==> dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib]
-          arg [-LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib] ==> dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib]
-          arg [-LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../..] ==> dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../..]
-          arg [-v] ==> ignore
-          arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_81916.dir/objects.a] ==> ignore
-          arg [--no-whole-archive] ==> ignore
-          arg [--out-implib] ==> ignore
-          arg [libcmTC_81916.dll.a] ==> ignore
-          arg [--major-image-version] ==> ignore
-          arg [0] ==> ignore
-          arg [--minor-image-version] ==> ignore
-          arg [0] ==> ignore
-          arg [-lstdc++] ==> lib [stdc++]
-          arg [-lmingw32] ==> lib [mingw32]
-          arg [-lgcc_s] ==> lib [gcc_s]
-          arg [-lgcc] ==> lib [gcc]
-          arg [-lmingwex] ==> lib [mingwex]
-          arg [-lmsvcrt] ==> lib [msvcrt]
-          arg [-lkernel32] ==> lib [kernel32]
-          arg [-lpthread] ==> lib [pthread]
-          arg [-ladvapi32] ==> lib [advapi32]
-          arg [-lshell32] ==> lib [shell32]
-          arg [-luser32] ==> lib [user32]
-          arg [-lkernel32] ==> lib [kernel32]
-          arg [-lmingw32] ==> lib [mingw32]
-          arg [-lgcc_s] ==> lib [gcc_s]
-          arg [-lgcc] ==> lib [gcc]
-          arg [-lmingwex] ==> lib [mingwex]
-          arg [-lmsvcrt] ==> lib [msvcrt]
-          arg [-lkernel32] ==> lib [kernel32]
-          arg [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/default-manifest.o] ==> obj [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/default-manifest.o]
-          arg [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o] ==> obj [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o]
-        ignore line: [collect2 version 14.1.0]
-        ignore line: [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/liblto_plugin.dll -plugin-opt=F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\zxf19\\AppData\\Local\\Temp\\ccJCH4zR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_81916.exe F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/crt2.o F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0 -LF:/msys2/mingw64/bin/../lib/gcc -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib -LF:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_81916.dir/objects.a --no-whole-archive --out-implib libcmTC_81916.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/default-manifest.o F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o]
-        linker tool for 'CXX': F:/msys2/mingw64/x86_64-w64-mingw32/bin/ld.exe
-        remove lib [msvcrt]
-        remove lib [msvcrt]
-        collapse obj [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/crt2.o] ==> [F:/msys2/mingw64/lib/crt2.o]
-        collapse obj [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o] ==> [F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o]
-        collapse obj [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib/default-manifest.o] ==> [F:/msys2/mingw64/lib/default-manifest.o]
-        collapse obj [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o] ==> [F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o]
-        collapse library dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0] ==> [F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0]
-        collapse library dir [F:/msys2/mingw64/bin/../lib/gcc] ==> [F:/msys2/mingw64/lib/gcc]
-        collapse library dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [F:/msys2/mingw64/x86_64-w64-mingw32/lib]
-        collapse library dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../lib] ==> [F:/msys2/mingw64/lib]
-        collapse library dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../x86_64-w64-mingw32/lib] ==> [F:/msys2/mingw64/x86_64-w64-mingw32/lib]
-        collapse library dir [F:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../..] ==> [F:/msys2/mingw64/lib]
-        implicit libs: [stdc++;mingw32;gcc_s;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;mingwex;kernel32]
-        implicit objs: [F:/msys2/mingw64/lib/crt2.o;F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtbegin.o;F:/msys2/mingw64/lib/default-manifest.o;F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/crtend.o]
-        implicit dirs: [F:/msys2/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0;F:/msys2/mingw64/lib/gcc;F:/msys2/mingw64/x86_64-w64-mingw32/lib;F:/msys2/mingw64/lib]
-        implicit fwks: []
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "E:/CMAKE/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
-      - "E:/CMAKE/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      Running the CXX compiler's linker: "F:/msys2/mingw64/x86_64-w64-mingw32/bin/ld.exe" "-v"
-      GNU ld (GNU Binutils) 2.42
 ...

@@ -16,7 +16,7 @@ void StateMachine::applyTransactions(const std::vector<Transaction>& transaction
         int receiver = tx.getReceiverId();
         double amount = tx.getAmount();
 
-        // Check if the balance is sufficient
+        // 检查余额是否足够
         if (balances[sender] >= amount) {
             balances[sender] -= amount;
             balances[receiver] += amount;
