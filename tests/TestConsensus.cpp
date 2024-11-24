@@ -8,7 +8,6 @@ TEST(ConsensusTest, ConsensusProposal) {
     Network network;
     StateMachine stateMachine;
 
-    // 创建 Node 实例时传入 stateMachine 指针
     Node node(1, &network, &stateMachine);
     Consensus consensus(&node, &stateMachine);
 
@@ -21,7 +20,6 @@ TEST(ConsensusTest, ConsensusHandleMessages) {
     Network network;
     StateMachine stateMachine;
 
-    // 创建 Node 实例时传入 stateMachine 指针
     Node node(1, &network, &stateMachine);
     Consensus consensus(&node, &stateMachine);
 

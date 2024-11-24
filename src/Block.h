@@ -3,7 +3,7 @@
 
 #include <string>
 #include <vector>
-#include "Transaction.h"  // 添加对 Transaction 类的包含
+#include "Transaction.h"
 
 class Block {
 public:
@@ -12,7 +12,9 @@ public:
     std::string getHash() const;
     int getIndex() const;
     std::string getPreviousHash() const;
-    const std::vector<Transaction>& getTransactions() const; // 返回交易列表
+
+    // Return to transaction list
+    const std::vector<Transaction>& getTransactions() const; 
 
 private:
     int index;

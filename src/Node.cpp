@@ -5,7 +5,6 @@
 
 Node::Node(int id, Network* network, StateMachine* stateMachine)
     : id(id), network(network), consensus(this, stateMachine), stateMachine(stateMachine) {
-    // Consensus 初始化时传递 stateMachine
 }
 
 int Node::getId() const {
@@ -13,14 +12,14 @@ int Node::getId() const {
 }
 
 void Node::receiveMessage(const Message& message) {
-    // 处理接收到的消息逻辑
+    // Processing received messages
     Utils::log("Node " + std::to_string(id) + " received message: " + message.getContent());
 }
 
 void Node::proposeBlock() {
-    // 节点发起区块提议的逻辑
+    // Node initiating block proposal
     Utils::log("Node " + std::to_string(id) + " is proposing a new block.");
-    consensus.startConsensus();  // 启动共识流程
+    consensus.startConsensus();  // Start the consensus process
 }
 
 void Node::sendMessageToAll(const Message& message) {
@@ -31,7 +30,7 @@ void Node::sendMessageToAll(const Message& message) {
 
 void Node::rollbackConsensus() {
     Utils::log("Node " + std::to_string(id) + " is rolling back consensus.");
-    consensus.rollbackConsensus();  // 通过 Consensus 类调用回滚方法
+    consensus.rollbackConsensus();  
 }
 
 void Node::printStatus(std::ostream& os) const {
@@ -41,7 +40,7 @@ void Node::printStatus(std::ostream& os) const {
 
     if (stateMachine) {
         double balance = stateMachine->getBalance(id);
-        os << "Current balance: " << balance << std::endl;  // 输出当前余额
+        os << "Current balance: " << balance << std::endl;  // Output current balance
     } else {
         os << "StateMachine not initialized." << std::endl;
     }

@@ -4,16 +4,18 @@
 
 Block::Block(int index, const std::string& previousHash, const std::vector<Transaction>& transactions)
     : index(index), previousHash(previousHash), transactions(transactions) {
-    hash = calculateHash();  // 计算区块的哈希
+    
+    // Calculate hash
+    hash = calculateHash();
 }
 
 std::string Block::calculateHash() const {
     std::stringstream ss;
     ss << index << previousHash;
 
-    // 遍历每个交易，并将交易的字符串表示添加到哈希输入中
+    // Iterate over each transaction and add the string representation of the transaction to the hash input
     for (const auto& tx : transactions) {
-        ss << tx.toString();  // 使用 Transaction 类的 toString() 方法
+        ss << tx.toString();
     }
 
     std::string input = ss.str();

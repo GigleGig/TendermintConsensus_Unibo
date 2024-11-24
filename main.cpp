@@ -10,21 +10,21 @@
 int main() {
     Network network;
 
-    // 创建多个节点，每个节点共享一个状态机
-    StateMachine stateMachine;  // 创建状态机实例
+    // Create multiple nodes, each node shares a state machine
+    StateMachine stateMachine;
     std::vector<std::unique_ptr<Node>> nodes;
 
     int nodeCount = 4;
     for (int i = 0; i < nodeCount; ++i) {
-        nodes.push_back(std::make_unique<Node>(i + 1, &network, &stateMachine));  // 使用三个参数创建节点
+        nodes.push_back(std::make_unique<Node>(i + 1, &network, &stateMachine));
     }
 
-    // 注册节点到网络中
+    // Registering nodes to the network
     for (auto& node : nodes) {
         network.registerNode(node.get());
     }
 
-    // 启动交互式客户端
+    // Start the interactive client
     std::string command;
     while (true) {
         std::cout << "Enter command (help for a list of commands): ";

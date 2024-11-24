@@ -15,7 +15,7 @@ public:
     void startConsensus();
     void onReceiveMessage(const Message& message);
     void rollbackConsensus();
-    std::string getCurrentStageAsString() const; // 声明 getCurrentStageAsString 方法
+    std::string getCurrentStageAsString() const;
 
 private:
     Node* node;

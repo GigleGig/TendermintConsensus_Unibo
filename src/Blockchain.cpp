@@ -26,7 +26,6 @@ bool Blockchain::isValidNewBlock(const Block& newBlock, const Block& previousBlo
     return true;
 }
 
-// 实现获取链长度的方法
 int Blockchain::getChainLength() const {
     return static_cast<int>(chain.size());
 }

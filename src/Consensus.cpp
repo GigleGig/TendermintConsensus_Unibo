@@ -34,7 +34,7 @@ void Consensus::initiateProposal() {
     currentStage = ConsensusStage::PROPOSAL;
     proposalBlockIndex++;
 
-    // 获取节点待处理交易
+    // Get pending transactions on a node
     std::vector<Transaction> transactions = node->getPendingTransactions();
     std::vector<Transaction> validTransactions;
 
@@ -42,7 +42,7 @@ void Consensus::initiateProposal() {
         int senderId = tx.getSenderId();
         double amount = tx.getAmount();
 
-        // 验证余额是否充足
+        // Verify that the balance is sufficient
         if (stateMachine->getBalance(senderId) >= amount) {
             validTransactions.push_back(tx);
         } else {
@@ -50,25 +50,25 @@ void Consensus::initiateProposal() {
         }
     }
 
-    // 如果没有有效的交易，则不创建新块
+    // If there are no valid transactions, no new block is created
     if (validTransactions.empty()) {
         Utils::log("No valid transactions to include in the block, aborting consensus.");
         return;
     }
 
-    // 创建新块
+    // Create nre block
     Block newBlock(proposalBlockIndex, node->getBlockchain().getLatestBlock().getHash(), validTransactions);
     node->getBlockchain().addBlock(newBlock);
 
-    // 清空已被打包的交易
+    // Clear the packaged transactions
     node->clearPendingTransactions();
 
-    // 创建快照
+    // Creating a snapshot
     if (stateMachine) {
         stateMachine->createSnapshot();
     }
 
-    // 发送提案消息
+    // Send proposal message
     broadcastMessage(MessageType::PROPOSAL, newBlock.getHash());
 }
 
@@ -150,7 +150,6 @@ void Consensus::rollbackConsensus() {
 
     // Record the number of failures
     // static int failureCount = 0; 
-
     if (stateMachine) {
         stateMachine->rollback();
     }

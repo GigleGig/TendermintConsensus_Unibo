@@ -13,7 +13,6 @@ public:
     void addBlock(const Block& newBlock);
     const Block& getLatestBlock() const;
 
-    // 添加获取链长度的方法
     int getChainLength() const;
 
 private:

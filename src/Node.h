@@ -31,7 +31,7 @@ private:
     Blockchain blockchain;
     Network* network;
     Consensus consensus;
-    StateMachine* stateMachine;  // 添加状态机指针，用于获取节点余额
+    StateMachine* stateMachine;  // Add statemachine to get node balance
     std::vector<Transaction> pendingTransactions;
 
     void processProposal(const Message& message);
