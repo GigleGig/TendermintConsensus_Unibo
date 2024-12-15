@@ -2,6 +2,7 @@
 #define TRANSACTION_H
 
 #include <string>
+#include <sstream>
 
 class Transaction {
 public:

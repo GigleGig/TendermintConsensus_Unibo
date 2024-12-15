@@ -8,6 +8,9 @@
 #include "StateMachine.h"
 #include <string>
 #include <iostream>
+#include <vector>
+
+class Network; // Forward declaration to avoid circular dependency
 
 class Node {
 public:
@@ -24,17 +27,19 @@ public:
     void createTransaction(int receiverId, double amount);
     const std::vector<Transaction>& getPendingTransactions() const;
     void clearPendingTransactions();
-    Blockchain& getBlockchain();  
+    Blockchain& getBlockchain();
+    Network* getNetwork() const;
 
 private:
     int id;
     Blockchain blockchain;
     Network* network;
-    Consensus consensus;
-    StateMachine* stateMachine;  // Add statemachine to get node balance
+    Consensus consensus; // Ensure 'Consensus' is fully defined in the header
+    
+    StateMachine* stateMachine;
     std::vector<Transaction> pendingTransactions;
 
     void processProposal(const Message& message);
 };
 
-#endif
+#endif // NODE_H

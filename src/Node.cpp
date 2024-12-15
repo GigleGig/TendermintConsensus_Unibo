@@ -4,16 +4,15 @@
 #include <sstream>
 
 Node::Node(int id, Network* network, StateMachine* stateMachine)
-    : id(id), network(network), consensus(this, stateMachine), stateMachine(stateMachine) {
-}
+    : id(id), network(network), stateMachine(stateMachine), consensus(this, stateMachine) {}
 
 int Node::getId() const {
     return id;
 }
 
 void Node::receiveMessage(const Message& message) {
-    // Processing received messages
     Utils::log("Node " + std::to_string(id) + " received message: " + message.getContent());
+    consensus.onReceiveMessage(message);
 }
 
 void Node::proposeBlock() {
@@ -52,24 +51,37 @@ void Node::printStatus(std::ostream& os) const {
 }
 
 void Node::createTransaction(int receiverId, double amount) {
-    if (id == receiverId) {
-        Utils::log("Transaction to self is not allowed.");
+    if (stateMachine->getBalance(this->id) < amount) {
+        Utils::log("Transaction failed: insufficient balance.");
         return;
     }
 
-    Transaction tx(id, receiverId, amount);
-    pendingTransactions.push_back(tx);
-    Utils::log("Transaction created: " + tx.toString());
+    Transaction transaction(this->id, receiverId, amount);
+    pendingTransactions.push_back(transaction);
+    Utils::log("Transaction created: " + transaction.toString());
+
+    // Directly add transaction to Consensus
+    consensus.addPendingTransaction(transaction);
 }
+
+
 
 const std::vector<Transaction>& Node::getPendingTransactions() const {
     return pendingTransactions;
 }
 
 void Node::clearPendingTransactions() {
-    pendingTransactions.clear();
+    if (consensus.getCurrentStageAsString() == "FINALIZED") {
+        pendingTransactions.clear();
+    } else {
+        Utils::log("Transactions not cleared: Consensus is not finalized.");
+    }
 }
 
 Blockchain& Node::getBlockchain() {
     return blockchain;
+}
+
+Network* Node::getNetwork() const {
+    return network;
 }

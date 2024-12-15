@@ -5,12 +5,41 @@
 #include <chrono>
 #include <thread>
 
+// Define MAX_RETRIES if not already defined
+#ifndef MAX_RETRIES
+#define MAX_RETRIES 5
+#endif
+
 Consensus::Consensus(Node* node, StateMachine* stateMachine)
-    : node(node), stateMachine(stateMachine), currentStage(ConsensusStage::PROPOSAL), proposalBlockIndex(-1) {}
+    : node(node),
+      stateMachine(stateMachine),
+      currentStage(ConsensusStage::PROPOSAL),
+      proposalBlockIndex(0),
+      currentLeaderId(-1),
+      retryCount(0),
+      threshold(0) { // Default threshold is 0, dynamically calculated
+}
 
 void Consensus::startConsensus() {
-    initiateProposal();
+    try {
+        size_t totalNodes = node->getNetwork()->getTotalNodes();
+        threshold = (2 * totalNodes) / 3 + 1; // Calculate 2/3 majority dynamically
+        Utils::log("Threshold for consensus set to " + std::to_string(threshold) + " out of " + std::to_string(totalNodes) + " nodes.");
+
+        // Always re-fetch transactions from Node
+        pendingTransactions = node->getPendingTransactions();
+
+        if (!pendingTransactions.empty()) {
+            initiateProposal();
+        } else {
+            Utils::log("No transactions available for consensus. Waiting...");
+        }
+    } catch (const std::exception& e) {
+        Utils::log("Exception in startConsensus: " + std::string(e.what()));
+    }
 }
+
+
 
 void Consensus::onReceiveMessage(const Message& message) {
     switch (message.getType()) {
@@ -29,48 +58,26 @@ void Consensus::onReceiveMessage(const Message& message) {
 }
 
 void Consensus::initiateProposal() {
-    Utils::log("Node starting consensus - initiating proposal");
+    electNewLeader();
+    if (node->getId() == currentLeaderId) {
+        Utils::log("Node " + std::to_string(node->getId()) + " is the leader. Proposing a new block.");
+        Utils::log("Transactions in Node (before proposal): " + std::to_string(node->getPendingTransactions().size()));
 
-    currentStage = ConsensusStage::PROPOSAL;
-    proposalBlockIndex++;
+        proposalHash = "Block_" + std::to_string(proposalBlockIndex++);
+        pendingTransactions = node->getPendingTransactions(); // Transfer transactions
+        Utils::log("Transactions being proposed (Consensus): " + std::to_string(pendingTransactions.size()));
 
-    // Get pending transactions on a node
-    std::vector<Transaction> transactions = node->getPendingTransactions();
-    std::vector<Transaction> validTransactions;
-
-    for (const auto& tx : transactions) {
-        int senderId = tx.getSenderId();
-        double amount = tx.getAmount();
-
-        // Verify that the balance is sufficient
-        if (stateMachine->getBalance(senderId) >= amount) {
-            validTransactions.push_back(tx);
-        } else {
-            Utils::log("Transaction failed due to insufficient balance: " + tx.toString());
+        if (stateMachine) {
+            stateMachine->createSnapshot();
         }
+
+        broadcastMessage(MessageType::PROPOSAL, proposalHash);
+        currentStage = ConsensusStage::PREVOTE;
+    } else {
+        Utils::log("Node " + std::to_string(node->getId()) + " is waiting for proposal from leader.");
     }
-
-    // If there are no valid transactions, no new block is created
-    if (validTransactions.empty()) {
-        Utils::log("No valid transactions to include in the block, aborting consensus.");
-        return;
-    }
-
-    // Create nre block
-    Block newBlock(proposalBlockIndex, node->getBlockchain().getLatestBlock().getHash(), validTransactions);
-    node->getBlockchain().addBlock(newBlock);
-
-    // Clear the packaged transactions
-    node->clearPendingTransactions();
-
-    // Creating a snapshot
-    if (stateMachine) {
-        stateMachine->createSnapshot();
-    }
-
-    // Send proposal message
-    broadcastMessage(MessageType::PROPOSAL, newBlock.getHash());
 }
+
 
 void Consensus::broadcastMessage(MessageType type, const std::string& content) {
     if (node) {
@@ -80,35 +87,45 @@ void Consensus::broadcastMessage(MessageType type, const std::string& content) {
 }
 
 void Consensus::handleProposal(const Message& message) {
-    Utils::log("Node received proposal from Node " + std::to_string(message.getSenderId()) + ": " + message.getContent());
+    Utils::log("Node " + std::to_string(node->getId()) + " received proposal from Node " + std::to_string(message.getSenderId()) + ": " + message.getContent());
 
     currentStage = ConsensusStage::PREVOTE;
     proposalHash = message.getContent();
 
-    //Send pre-voting message
     broadcastMessage(MessageType::PREVOTE, proposalHash);
 }
 
 void Consensus::handlePrevote(const Message& message) {
-    Utils::log("Node received prevote from Node " + std::to_string(message.getSenderId()));
-    prevotesReceived.push_back(message.getSenderId());
+    Utils::log("Node " + std::to_string(node->getId()) + " received prevote from Node " + std::to_string(message.getSenderId()));
 
-    // If a majority of prevotes are collected, enter the precommit phase
-    if (prevotesReceived.size() >= 2) { // Simple majority judgment
+    if (byzantineNodes.count(message.getSenderId())) {
+        Utils::log("Prevote from Byzantine Node " + std::to_string(message.getSenderId()) + " ignored.");
+        return;
+    }
+
+    prevotesReceived.insert(message.getSenderId());
+
+    if (isQuorumReached(prevotesReceived, threshold)) {
+        Utils::log("Quorum reached for PREVOTE. Broadcasting PRECOMMIT.");
         currentStage = ConsensusStage::PRECOMMIT;
         broadcastMessage(MessageType::PRECOMMIT, proposalHash);
     } else {
-        // Check if timeout processing is required
-        checkForTimeout(); 
+        checkForTimeout();
     }
 }
 
 void Consensus::handlePrecommit(const Message& message) {
-    Utils::log("Node received precommit from Node " + std::to_string(message.getSenderId()));
-    precommitsReceived.push_back(message.getSenderId());
+    Utils::log("Node " + std::to_string(node->getId()) + " received precommit from Node " + std::to_string(message.getSenderId()));
 
-    // If most precommits are collected, enter the finalized phase
-    if (precommitsReceived.size() >= 2) {
+    if (byzantineNodes.count(message.getSenderId())) {
+        Utils::log("Precommit from Byzantine Node " + std::to_string(message.getSenderId()) + " ignored.");
+        return;
+    }
+
+    precommitsReceived.insert(message.getSenderId());
+
+    if (isQuorumReached(precommitsReceived, threshold)) {
+        Utils::log("Quorum reached for PRECOMMIT. Finalizing consensus.");
         finalizeConsensus();
     } else {
         checkForTimeout();
@@ -116,70 +133,75 @@ void Consensus::handlePrecommit(const Message& message) {
 }
 
 void Consensus::checkForTimeout() {
-    // In a project, a timeout may be set. Here I pass it.
-    Utils::log("Consensus stage timed out, attempting to retry or rollback.");
+    if (retryCount < MAX_RETRIES) {
+        retryCount++;
+        Utils::log("Retrying consensus, attempt " + std::to_string(retryCount));
 
-    // If timeout, rollback is required
-    rollbackConsensus();
+        // Retain pending transactions
+        if (pendingTransactions.empty() && !node->getPendingTransactions().empty()) {
+            pendingTransactions = node->getPendingTransactions();
+            Utils::log("Re-synchronized transactions during retry. Size: " + std::to_string(pendingTransactions.size()));
+        }
+
+        startConsensus();
+    } else {
+        Utils::log("Consensus failed after maximum retries. Exiting consensus loop.");
+        retryCount = 0;
+        rollbackConsensus();
+    }
+}
+
+
+
+
+void Consensus::waitForNewTransactions() {
+    while (node->getPendingTransactions().empty()) {
+        Utils::log("No new transactions. Waiting...");
+        std::this_thread::sleep_for(std::chrono::milliseconds(500)); // Check every 500ms
+    }
+
+    Utils::log("New transactions detected. Resuming consensus.");
+    pendingTransactions = node->getPendingTransactions(); // Retrieve transactions
+    startConsensus(); // Restart consensus with new transactions
 }
 
 void Consensus::finalizeConsensus() {
     Utils::log("Consensus finalized for block: " + proposalHash);
-    currentStage = ConsensusStage::FINALIZED;
 
-    // Generate a set of dummy transactions for testing 
-    // Transactions can be obtained from the proposed block
-    std::vector<Transaction> transactions = {
-        // Send from current node to next node
-        Transaction(node->getId(), (node->getId() % 4) + 1, 100.0) 
-    };
+    if (!pendingTransactions.empty()) {
+        Utils::log("Transactions before processing (Consensus): " + std::to_string(pendingTransactions.size()));
+        stateMachine->prepareState(pendingTransactions);
+        stateMachine->commitState();
+        stateMachine->printState();
 
-    // Apply the transaction to the state machine
-    if (stateMachine) {
-        stateMachine->applyTransactions(transactions);
+        pendingTransactions.clear();
+        node->clearPendingTransactions();
+    } else {
+        Utils::log("No transactions to process.");
     }
 
-    // Print current state
-    stateMachine->printState();
-
-    // Start consensus for the next block
+    Utils::log("Ready for the next round of consensus.");
     startConsensus();
 }
 
+
+
+
+
 void Consensus::rollbackConsensus() {
-
-    // Record the number of failures
-    // static int failureCount = 0; 
-    if (stateMachine) {
-        stateMachine->rollback();
-    }
     Utils::log("Consensus failed and state has been rolled back.");
-    
-    // TODO: Can choose to restart consensus or perform other processing
-    // If restart, then
-    // Utils::log("Attempting to restart consensus after rollback.");
-    // startConsensus();
 
-    // else can send a rollback message to other nodes in the network
-    // broadcastMessage(MessageType::ROLLBACK, proposalHash);
+    if (stateMachine) {
+        stateMachine->rollbackState();
+    }
 
-    // Enter the observation state to avoid frequent retries
-    // Utils::log("Node entering observation mode after failed consensus.");
+    // Rebroadcast pending transactions
+    for (const auto& transaction : pendingTransactions) {
+        broadcastMessage(MessageType::PROPOSAL, transaction.toString());
+    }
 
-    // Wait for a while and try to start consensus again
-    // std::this_thread::sleep_for(std::chrono::seconds(5)); 
-    // startConsensus();
-
-    // failureCount++;
-
-    // If the number of consecutive failures reaches the threshold, an alarm is triggered
-    // if (failureCount >= 3) {
-    //     Utils::log("WARNING: Consensus failed multiple times, manual intervention may be needed.");
-    //     failureCount = 0; // Reset Counter
-    // } else {
-    //     Utils::log("Retrying consensus...");
-    //     startConsensus(); // Restart consensus
-    // }
+    Utils::log("Restarting consensus after rollback...");
+    startConsensus();
 }
 
 std::string Consensus::getCurrentStageAsString() const {
@@ -195,4 +217,18 @@ std::string Consensus::getCurrentStageAsString() const {
         default:
             return "UNKNOWN";
     }
+}
+
+bool Consensus::isQuorumReached(const std::unordered_set<size_t>& votes, size_t quorumThreshold) {
+    return votes.size() >= quorumThreshold;
+}
+
+void Consensus::electNewLeader() {
+    currentLeaderId = (currentLeaderId + 1) % node->getNetwork()->getTotalNodes();
+    Utils::log("New leader elected: Node " + std::to_string(currentLeaderId));
+}
+
+void Consensus::addPendingTransaction(const Transaction& transaction) {
+    pendingTransactions.push_back(transaction);
+    Utils::log("Transaction added. Current pending size: " + std::to_string(pendingTransactions.size()));
 }
