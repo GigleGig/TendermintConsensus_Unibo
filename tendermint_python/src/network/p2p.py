@@ -35,3 +35,13 @@ class Network:
 
     def get_node(self, node_id):
         return self.nodes[node_id]
+    
+    def partition_network(self, isolated_nodes):
+        """Isolate specific nodes in the network."""
+        self.partitioned = True
+        self.partitions = {"isolated": isolated_nodes}
+
+    def heal_partition(self):
+        """Restore normal network functionality."""
+        self.partitioned = False
+        self.partitions.clear()

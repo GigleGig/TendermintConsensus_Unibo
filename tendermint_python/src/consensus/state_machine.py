@@ -29,7 +29,6 @@ class ConsensusState:
             msg = await self.p2p_node.receive_message()
             await self.handle_message(msg)
 
-
     async def handle_message(self, msg):
         if msg.type == "timeout":
             await self.handle_timeout(msg.data["event_type"])
@@ -155,11 +154,10 @@ class ConsensusState:
         )
         msg = Message(type="prevote", sender=self.validator_id, data={"vote": vote.to_dict()})
 
-        # 如果是拜占庭节点，可以发送不同 hash 的 prevote 给不同节点
         if self.byzantine:
             logger.warning(f"{self.validator_id} is byzantine and sends conflicting prevotes!")
             for i, vid in enumerate(self.validator_set.validators):
-                # 对每个目标节点稍微改变一下 block_hash
+                # Generate conflicting prevotes with fake hashes
                 fake_hash = block_hash if i == 0 else block_hash + f"_fake_{i}"
                 fake_sig = self.validator_set.sign_vote(self.validator_id, fake_hash)
                 fake_vote = Vote(
@@ -172,7 +170,7 @@ class ConsensusState:
                 fake_msg = Message(type="prevote", sender=self.validator_id, data={"vote": fake_vote.to_dict()})
                 await self.p2p_node.send_message(vid, fake_msg)
         else:
-            # 正常节点正常广播
+            # Normal broadcast for honest nodes
             for vid in self.validator_set.validators:
                 await self.p2p_node.send_message(vid, msg)
 
