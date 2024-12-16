@@ -7,5 +7,5 @@ class StateStore:
 
     def commit_block(self, block, app):
         self.blocks.append(block)
-        # 简化应用执行：假设每个交易是 {"action":"set","key":"k","value":"v"}
+        # Simplified application execution: Assume that each transaction is {"action":"set","key":"k","value":"v"}
         app.apply_block(block, self)

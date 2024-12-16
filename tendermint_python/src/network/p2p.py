@@ -20,16 +20,16 @@ class Network:
         self.nodes = {nid: P2PNode(nid, self) for nid in node_ids}
         self.delay = delay
         self.drop_rate = drop_rate
-        self.partitioned = False  # 是否模拟网络分区
-        self.partitions = {}  # 分区详情，暂未实现
+        self.partitioned = False  # Whether to simulate network partition
+        self.partitions = {}  # Partition details, not yet implemented
 
     async def send_message(self, target_id, message):
         if self.partitioned and target_id in self.partitions.get("isolated", []):
-            # 模拟网络分区，消息被隔离
+            # Simulate network partition and isolate messages
             return
-        # 故障注入：延迟发送
+        # Fault injection: delayed sending
         await asyncio.sleep(self.delay)
-        # 故障注入：概率丢包
+        # Fault injection: probabilistic packet loss
         if random.random() > self.drop_rate:
             await self.nodes[target_id].inbox.put(message)
 

@@ -21,10 +21,10 @@ class ConsensusState:
         self.proposal_block = None
         self.prevotes = []
         self.precommits = []
-        self.committed_heights = set()  # 用于跟踪已提交的高度
+        self.committed_heights = set()  # Used to track submitted heights
 
     async def run(self):
-        # 主循环
+        # main loop
         while True:
             msg = await self.p2p_node.receive_message()
             await self.handle_message(msg)
@@ -54,7 +54,7 @@ class ConsensusState:
         self.height = proposal_height
         self.round = proposal_round
         logger.debug(f"{self.validator_id} received proposal block at H:{proposal_height} R:{proposal_round}")
-        # 记录收到提议后启动预投票定时器
+        # Record the start of the pre-voting timer after receiving the proposal
         asyncio.create_task(self.set_step_timeout("prevote_timeout", 0.5))
 
     async def handle_prevote(self, msg):
@@ -79,12 +79,12 @@ class ConsensusState:
             logger.debug(f"{self.validator_id} already committed block at height {block_height}, ignoring commit message.")
             return
 
-        # 提交区块到状态
+        # Submit block to state
         self.state_store.commit_block(block, self.app)
         self.committed_heights.add(block_height)
         logger.info(f"{self.validator_id} committed block at height {block_height} via commit message.")
 
-        # 更新节点状态
+        # Update node status
         if block_height >= self.height:
             self.height = block_height + 1
             self.round = 0
@@ -92,9 +92,9 @@ class ConsensusState:
             self.prevotes.clear()
             self.precommits.clear()
             self.proposal_block = None
-            # 启动下一轮提议定时器
+            # Start the next round of proposal timer
             asyncio.create_task(self.set_step_timeout("propose_timeout", 0.5))
-            # 如果我是提议者就发送下一个 proposal
+            # If I am the proposer, I will send the next proposal
             proposer = self.validator_set.get_proposer(self.height, self.round)
             if proposer == self.validator_id:
                 await self.broadcast_proposal()
@@ -102,7 +102,7 @@ class ConsensusState:
     async def handle_timeout(self, event_type):
         if event_type == "propose_timeout" and self.step == "propose":
             logger.debug(f"{self.validator_id} propose timeout, move to prevote step.")
-            # 若未收到 proposal 则开始 prevote 空块或进入下一轮
+            # If no proposal is received, start prevoting an empty block or enter the next round
             await self.enter_prevote_step()
         elif event_type == "prevote_timeout" and self.step == "prevote":
             logger.debug(f"{self.validator_id} prevote timeout, move to precommit step.")
@@ -116,7 +116,7 @@ class ConsensusState:
             logger.debug(f"{self.validator_id} has already committed block at height {self.height}, cannot propose.")
             return
 
-        # 从 mempool 获取交易
+        # Get transactions from mempool
         transactions = self.app.mempool.get_txs(num=5)
         hdr = BlockHeader(height=self.height, round=self.round, proposer_id=self.validator_id, block_hash="")
         block_hash = compute_block_hash(hdr, transactions)
@@ -176,14 +176,14 @@ class ConsensusState:
 
     async def enter_prevote_step(self):
         self.step = "prevote"
-        # 仅在未提交时设置超时
+        # Set timeout only if not submitted
         if self.height not in self.committed_heights:
             asyncio.create_task(self.set_step_timeout("prevote_timeout", 0.5))
         await self.broadcast_prevote()
 
     async def enter_precommit_step(self):
         self.step = "precommit"
-        # 仅在未提交时设置超时
+        # Set timeout only if not submitted
         if self.height not in self.committed_heights:
             asyncio.create_task(self.set_step_timeout("precommit_timeout", 0.5))
         await self.broadcast_precommit()
@@ -208,14 +208,14 @@ class ConsensusState:
             await self.p2p_node.send_message(vid, msg)
 
     async def check_prevote_threshold(self):
-        # 简单检查：如果收集到 2/3 prevote 则进入 precommit
+        # Simple check: if 2/3 prevotes are collected, then enter precommit
         needed = (2 * len(self.validator_set.validators) // 3) + 1
         if len(self.prevotes) >= needed:
             logger.debug(f"{self.validator_id} got {needed} prevotes")
             await self.enter_precommit_step()
 
     async def check_precommit_threshold(self):
-        # 简单检查：如果收集到 2/3 precommit 则提交区块
+        # Simple check: if 2/3 precommits are collected, commit the block
         needed = (2 * len(self.validator_set.validators) // 3) + 1
         if len(self.precommits) >= needed:
             if self.height in self.committed_heights:
@@ -229,33 +229,33 @@ class ConsensusState:
             logger.debug(f"{self.validator_id} has already committed block at height {self.height}, skipping commit.")
             return
 
-        # 提交区块到状态
+        # Submit block to state
         block = self.build_block_from_proposal(self.proposal_block)
         self.state_store.commit_block(block, self.app)
         self.committed_heights.add(self.height)
         logger.info(f"{self.validator_id} committed block at height {self.height}")
 
-        # 广播已提交的区块给所有节点，以便他们更新自己的 StateStore
+        # Broadcast the committed block to all nodes so that they can update their StateStore
         commit_msg = Message(type="commit", sender=self.validator_id, data={"block": block.to_dict()})
         for vid in self.validator_set.validators:
             await self.p2p_node.send_message(vid, commit_msg)
 
-        # 更新节点状态
+        # Update node status
         self.height += 1
         self.round = 0
         self.step = "propose"
         self.prevotes.clear()
         self.precommits.clear()
         self.proposal_block = None
-        # 启动下一轮提议定时器
+        # Start the next round of proposal timer
         asyncio.create_task(self.set_step_timeout("propose_timeout", 0.5))
-        # 如果我是提议者就发送下一个 proposal
+        # If I am the proposer, I will send the next proposal
         proposer = self.validator_set.get_proposer(self.height, self.round)
         if proposer == self.validator_id:
             await self.broadcast_proposal()
 
     async def check_commit_or_next_round(self):
-        # 若没有达到 2/3，则进行下一轮
+        # If it does not reach 2/3, proceed to the next round
         logger.debug(f"{self.validator_id} not enough precommits, start next round")
         self.round += 1
         self.step = "propose"
@@ -267,7 +267,7 @@ class ConsensusState:
             await self.broadcast_proposal()
 
     def build_block_from_proposal(self, proposal):
-        # 将 proposal 的数据转化为 Block
+        # Convert proposal data into Block
         hdr = BlockHeader(
             height=proposal["header"]["height"],
             round=proposal["header"]["round"],
