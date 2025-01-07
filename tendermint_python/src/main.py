@@ -21,6 +21,8 @@ def assign_byzantine_nodes(consensus_states, num_byzantine):
 
 
 async def main():
+
+    # Network and Validators
     network = Network(NODE_IDS, delay=0.01, drop_rate=0.0)
     validator_set = ValidatorSet(NODE_IDS)
     
@@ -50,7 +52,7 @@ async def main():
     print(f"Byzantine nodes: {byzantine_nodes}")
 
     # Find the current proposer and broadcast the first proposal
-    proposer = validator_set.get_proposer(consensus_states["node1"].height, consensus_states["node1"].round)
+    proposer = validator_set.get_proposer(consensus_states["node1"].height, consensus_states["node1"].round) # Each node starts with the same initial height and round
     proposer_cs = consensus_states[proposer]
     await proposer_cs.broadcast_proposal()
 

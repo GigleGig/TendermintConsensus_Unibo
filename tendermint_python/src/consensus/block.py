@@ -3,7 +3,8 @@
 import hashlib
 import json
 
-class BlockHeader:
+# Records the basic information of a block (height, round, proposer proposer_id, and block_hash).
+class BlockHeader: 
     def __init__(self, height, round, proposer_id, block_hash):
         self.height = height
         self.round = round
@@ -11,6 +12,10 @@ class BlockHeader:
         self.block_hash = block_hash
 
     def to_dict(self):
+        """
+        Serialization
+        Pack the BlockHeader attributes (height, round, proposer_id, block_hash) into a dictionary, which can be converted into a JSON string and sent over the network.
+        """
         return {
             "height": self.height,
             "round": self.round,
@@ -20,6 +25,10 @@ class BlockHeader:
 
     @staticmethod
     def from_dict(data):
+        """
+        Deserialization
+        When a node receives a dictionary or JSON containing block header information from the network or storage, it needs to use the from_dict method to restore it to a BlockHeader object to continue consensus or block processing.
+        """
         return BlockHeader(
             height=data["height"],
             round=data["round"],
@@ -27,6 +36,7 @@ class BlockHeader:
             block_hash=data["block_hash"]
         )
 
+# Contains a block header and a list of transactions within the block.
 class Block:
     def __init__(self, header, transactions):
         self.header = header

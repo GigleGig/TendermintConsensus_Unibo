@@ -16,6 +16,19 @@ class P2PNode:
         await self.network.send_message(target_id, message)
 
 class Network:
+    """
+    The simplest network model is simulated here:
+
+    delay: simulate network delay
+    drop_rate: simulate probability packet loss
+    partition_network / heal_partition can simulate network partition and recovery
+    Each node corresponds to a P2PNode instance, and there is an asyncio.Queue() inside to save the received messages.
+
+    send_message(target_id, message) will first await asyncio.sleep(self.delay) and then put the message in the inbox of the target node.
+
+    If drop_rate > 0, the message will be dropped with a certain probability.
+    """
+    
     def __init__(self, node_ids, delay=0.01, drop_rate=0.0):
         self.nodes = {nid: P2PNode(nid, self) for nid in node_ids}
         self.delay = delay

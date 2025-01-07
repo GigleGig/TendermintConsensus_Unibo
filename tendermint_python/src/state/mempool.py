@@ -3,6 +3,11 @@
 import json
 
 class Mempool:
+    """
+    Responsible for managing the transaction list: add_tx, get_txs, size.
+    When a node becomes a proposer, it will take out several transactions (5 by default) from the mempool to form a block.
+    """
+    
     def __init__(self):
         self.txs = []
     
