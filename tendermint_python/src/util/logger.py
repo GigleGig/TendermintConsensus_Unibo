@@ -3,10 +3,10 @@
 import logging
 
 logger = logging.getLogger("tendermint_sim")
-logger.setLevel(logging.DEBUG)  # 可以根据需要调整为 INFO
+logger.setLevel(logging.DEBUG)
 
 ch = logging.StreamHandler()
-ch.setLevel(logging.DEBUG)  # 可以根据需要调整为 INFO
+ch.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 ch.setFormatter(formatter)
 logger.addHandler(ch)
