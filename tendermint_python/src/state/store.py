@@ -1,7 +1,7 @@
 # src/state/store.py
 
 # Mainly stores the committed blocks (commit_block);
-class StateStore:1
+class StateStore:
     def __init__(self):
         self.blocks = []
         self.app_state = {}
