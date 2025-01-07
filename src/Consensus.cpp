@@ -39,8 +39,6 @@ void Consensus::startConsensus() {
     }
 }
 
-
-
 void Consensus::onReceiveMessage(const Message& message) {
     switch (message.getType()) {
         case PROPOSAL:
@@ -77,7 +75,6 @@ void Consensus::initiateProposal() {
         Utils::log("Node " + std::to_string(node->getId()) + " is waiting for proposal from leader.");
     }
 }
-
 
 void Consensus::broadcastMessage(MessageType type, const std::string& content) {
     if (node) {
@@ -151,9 +148,6 @@ void Consensus::checkForTimeout() {
     }
 }
 
-
-
-
 void Consensus::waitForNewTransactions() {
     while (node->getPendingTransactions().empty()) {
         Utils::log("No new transactions. Waiting...");
@@ -183,9 +177,6 @@ void Consensus::finalizeConsensus() {
     Utils::log("Ready for the next round of consensus.");
     startConsensus();
 }
-
-
-
 
 
 void Consensus::rollbackConsensus() {
